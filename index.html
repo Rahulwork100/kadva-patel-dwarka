@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kadva Patel Samaj Dwarka - Near Dwarkadhish Temple @ Rs.1250</title>
+<meta name="description" content="Kadva Patel Samaj Bhavan Dwarka - Affordable stay near Dwarkadhish Temple from Rs.1250. Direct booking WhatsApp +91 7351042519">
+<meta name="robots" content="index, follow">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+body{background:#fff;color:#222;line-height:1.7}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:100}
+.logo{font-weight:900;color:#0d4d0d;font-size:20px}
+.logo span{color:#ff8c00}
+nav a{margin-left:15px;text-decoration:none;color:#333;font-size:14px;font-weight:600}
+.hero{padding:75px 5%;text-align:center;background:linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.85)),url('https://images.unsplash.com/photo-1544550581-5f7ceaf7f992') center/cover}
+.hero h1{font-size:42px;color:#0d4d0d}
+.hero p{max-width:700px;margin:12px auto;font-size:16px}
+.btn{background:#0d4d0d;color:#ffcc00;padding:14px 34px;border:none;border-radius:8px;font-weight:800;cursor:pointer;font-size:16px}
+.btn2{background:#111;color:#fff;padding:11px;border:none;border-radius:7px;width:100%;cursor:pointer;margin-top:10px;font-weight:700}
+.container{padding:60px 5%;max-width:1200px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:25px}
+.card{border:1px solid #eee;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.07)}
+.card img{width:100%;height:215px;object-fit:cover}
+.info{padding:16px}
+.price{color:#0d4d0d;font-weight:900;font-size:18px}
+.badge{display:inline-block;background:#e8f5e9;border:1px solid #c8e6c9;padding:5px 11px;border-radius:20px;font-size:12px;margin:3px}
+.box{background:#f9f9f9;padding:25px;border-radius:12px;margin-top:20px;border:1px solid #eee}
+footer{background:#0f0f0f;color:#aaa;padding:40px 5%;font-size:13px;text-align:center}
+footer a{color:#ffcc00;text-decoration:none;margin:0 8px}
+.modal{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.65);z-index:999;justify-content:center;align-items:center}
+.modal-content{background:#fff;padding:24px;border-radius:12px;width:92%;max-width:420px;position:relative}
+.modal-content input,.modal-content select{width:100%;padding:12px;margin:7px 0;border:1px solid #ccc;border-radius:8px}
+.close{position:absolute;right:14px;top:2px;font-size:30px;cursor:pointer}
+h2{color:#0d4d0d}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Kadva Patel Samaj Dwarka","telephone":"+917351042519","priceRange":"Rs 1250 - Rs 2550","address":{"@type":"PostalAddress","addressLocality":"Dwarka","addressRegion":"Gujarat"}}
+</script>
+</head>
+<body>
+
+<header>
+<div class="logo">KADVA PATEL <span>SAMAJ</span> DWARKA</div>
+<nav><a href="#">Home</a><a href="#rooms">Rooms</a><a href="#contact">Contact</a></nav>
+</header>
+
+<section class="hero">
+<h1>Kadva Patel Samaj Dwarka</h1>
+<p>Clean, Safe & Affordable Stay for Yatris - Just 400m from Dwarkadhish Temple</p>
+<div style="margin:15px 0"><span class="badge">📍 400m Dwarkadhish Temple</span><span class="badge">🅿️ Parking</span><span class="badge">🍛 Bhojanalya</span><span class="badge">🚿 Hot Water</span><span class="badge">🛗 Lift</span></div>
+<button class="btn" onclick="openBooking()">Book Now - WhatsApp 7351042519</button>
+<p style="font-size:13px;margin-top:10px">Direct Booking | Samaj Bhavan Rate | Call: +91 7351042519</p>
+</section>
+
+<section class="container" id="rooms">
+<h2 style="text-align:center">Room Price List - Dwarka</h2>
+<p style="text-align:center;color:#666;font-size:14px">Festival time pe rate change ho sakta hai, WhatsApp pe confirm karein</p>
+
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Room 1250"><div class="info"><h3>Standard Room</h3><p class="price">Rs.1250 / Night</p><p>2 Persons | Double Bed | Attached Bath | Fan | Geyser | For Patel Samaj</p><button class="btn2" onclick="openBooking('Standard Room - Rs.1250')">Book @ Rs.1250</button></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427" alt="Room 1750"><div class="info"><h3>Deluxe AC Room</h3><p class="price">Rs.1750 / Night</p><p>3 Persons | AC | TV | Hot Water | Lift | Clean Bedding</p><button class="btn2" onclick="openBooking('Deluxe AC Room - Rs.1750')">Book @ Rs.1750</button></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc" alt="Room 2550"><div class="info"><h3>Family Hall - Samaj Bhavan</h3><p class="price">Rs.2550 / Night</p><p>6-10 Persons | Big Hall | Kitchen | Best for Group / Samaj Yatra</p><button class="btn2" onclick="openBooking('Family Hall - Rs.2550')">Book @ Rs.2550</button></div></div>
+</div>
+</section>
+
+<section class="container" id="about"><div class="box">
+<h2>About Kadva Patel Samaj Dwarka</h2><br>
+<p>Kadva Patel Samaj Bhavan Dwarka me yatriyon ke liye pavitra aur sasta niwas. Dwarkadhish Temple ke darshan ke liye best location par hai. Parivar aur samaj ke group ke liye bade hall available hain.</p><br>
+<p><b>Distance:</b> Dwarkadhish Temple 400m, Dwarka Beach 800m, Bet Dwarka Jetty 2km, Railway Station 1.5km</p><br>
+<p><b>Suvidhayein:</b> Veg Bhojanalya, RO Water, Garam Pani, Parking, CCTV, Lift, 24x7 Staff</p><br>
+<p style="color:#0d4d0d;font-weight:bold">Note: Bhavan me sharab, non-veg aur smoking mana hai. Samaj ke niyam ka palan karein.</p>
+</div></section>
+
+<section class="container" id="contact"><div class="box">
+<h2>Contact & Booking Office</h2><br>
+<p><b>Kadva Patel Samaj Bhavan Dwarka</b><br>Near Dwarkadhish Temple, Dwarka, Gujarat - 361335</p><br>
+<p><b>Booking Number (Call/WhatsApp):</b> <a href="https://wa.me/917351042519" style="color:#0d4d0d;font-weight:900;text-decoration:none">+91 7351042519</a></p>
+<p><b>Email:</b> kadvapateldwarka.booking@gmail.com</p>
+<p><b>Check-in:</b> 12 PM | <b>Check-out:</b> 11 AM</p><br>
+<button class="btn" onclick="window.open('https://wa.me/917351042519?text=Jai%20Dwarkadhish!%20Kadva%20Patel%20Samaj%20Dwarka%20me%20room%20chahiye','_blank')">WhatsApp Pe Message Karo</button>
+</div></section>
+
+<section class="container" style="background:#fafafa">
+<h3>Privacy Policy</h3><p style="font-size:13px;color:#555">Hum sirf booking ke liye naam, phone aur date lete hain. Data share nahi hota. Samasya ke liye 7351042519 pe sampark karein.</p><br>
+<h3>Terms & Conditions</h3><p style="font-size:13px;color:#555">1. Room availability par booking.<br>2. Advance se booking confirm.<br>3. 24 ghante pehle cancellation.<br>4. Samaj bhavan ke niyam sabhi ko manne honge.<br>5. Ye yatri sahayata website hai.</p>
+</section>
+
+<footer>
+<p><b>Kadva Patel Samaj Dwarka - Yatra Sahayata</b></p>
+<p>Booking Helpline: +91 7351042519</p>
+<p style="margin-top:12px">© 2026 Kadva Patel Samaj Dwarka</p>
+</footer>
+
+<div id="bookingModal" class="modal"><div class="modal-content">
+<span class="close" onclick="closeBooking()">&times;</span>
+<h2>Book Your Room</h2>
+<input type="text" id="guestName" placeholder="Yatri ka Naam *">
+<input type="tel" id="guestPhone" placeholder="Mobile Number *">
+<label style="font-size:12px">Check-in Date</label><input type="date" id="checkin">
+<label style="font-size:12px">Check-out Date</label><input type="date" id="checkout">
+<select id="roomType">
+<option>Standard Room - Rs.1250</option>
+<option>Deluxe AC Room - Rs.1750</option>
+<option>Family Hall - Rs.2550</option>
+</select>
+<button class="btn" style="width:100%;margin-top:12px" onclick="submitBooking()">Confirm on WhatsApp 7351042519</button>
+</div></div>
+
+<script>
+const MY_WHATSAPP="917351042519";
+function openBooking(r){document.getElementById('bookingModal').style.display='flex';if(r)document.getElementById('roomType').value=r}
+function closeBooking(){document.getElementById('bookingModal').style.display='none'}
+function submitBooking(){
+let n=document.getElementById('guestName').value.trim();
+let p=document.getElementById('guestPhone').value.trim();
+let ci=document.getElementById('checkin').value;
+let co=document.getElementById('checkout').value;
+let rm=document.getElementById('roomType').value;
+if(!n||!p||!ci||!co){alert('Sab fields bharo');return}
+let msg=`Jai Dwarkadhish! Kadva Patel Samaj Dwarka Booking:%0A*Name:* ${n}%0A*Phone:* ${p}%0A*Room:* ${rm}%0A*Check-in:* ${ci}%0A*Check-out:* ${co}`;
+window.open(`https://wa.me/${MY_WHATSAPP}?text=${msg}`,'_blank');
+closeBooking();
+}
+window.onclick=function(e){if(e.target==document.getElementById('bookingModal'))closeBooking()}
+</script>
+</body>
+</html>
